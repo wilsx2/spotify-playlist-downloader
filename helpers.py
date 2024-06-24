@@ -2,10 +2,10 @@ import os
 import re
 from datetime import datetime
 from pathlib import Path
-from tkinter import filedialog, tk
+from tkinter import filedialog, Tk
 
 # Create hidden tkinter window for using the file dialog method
-root = tk.Tk()
+root = Tk()
 root.withdraw()
 
 
