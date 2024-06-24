@@ -19,7 +19,7 @@ This project allows you to download songs from a Spotify playlist as audio files
 1. **Clone the repository:**
 
     ```sh
-    git clone https://github.com/yourusername/spotify-playlist-downloader.git
+    git clone https://github.com/wilsx2/spotify-playlist-downloader.git
     cd spotify-playlist-downloader
     ```
 
