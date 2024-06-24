@@ -2,7 +2,12 @@ import os
 import re
 from datetime import datetime
 from pathlib import Path
-from tkinter import filedialog
+from tkinter import filedialog, tk
+
+# Create hidden tkinter window for using the file dialog method
+root = tk.Tk()
+root.withdraw()
+
 
 # Regards the file system
 def remove_illegal_characters(string: str) -> str:

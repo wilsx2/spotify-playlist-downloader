@@ -27,7 +27,7 @@ This project allows you to download songs from a Spotify playlist as audio files
 
     ```sh
     python -m venv env
-    source env/bin/activate  # On Windows use `env\Scripts\activate`
+    source env/bin/activate  # On Windows use `env/Scripts/activate`
     ```
 
 3. **Install dependencies:**
@@ -37,14 +37,17 @@ This project allows you to download songs from a Spotify playlist as audio files
     ```
 
 4. **Set up environment variables:**
-
-    Edit the `.env` file in the root directory of the project and add your Spotify client ID and client secret from the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard). Your `.env` file should look like this:
+    ```sh
+    nano .env
+    ```
+    Paste your Spotify client ID and client secret from the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard). Your `.env` file should look like this:
 
     ```
     SPOTIPY_CLIENT_ID=your_spotify_client_id
     SPOTIPY_CLIENT_SECRET=your_spotify_client_secret
     SPOTIPY_REDIRECT_URI=http://localhost:3000
     ```
+    Then press Ctrl + x, then approve changes with "y" and keep the current file name.
 
 ## How to Run
 
@@ -57,6 +60,7 @@ This project allows you to download songs from a Spotify playlist as audio files
 2. **Follow the prompts:**
 
     - Provide the Spotify playlist URL when prompted.
+    - Sign into your Spotify account so you can access your playlists
     - Choose the download destination (default is the Music folder).
 
 3. **Wait for the download to complete:**
