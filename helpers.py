@@ -19,7 +19,12 @@ def save_log(log_messages: list[str], output_path: str) -> None:
 
     log_file_path = os.path.join(output_path, 'log.txt')
     with open(log_file_path, 'w') as log_file:
-        log_file.write('\n'.join(log_messages))
+        complete_log = ""
+
+        for message in log_messages:
+            complete_log = complete_log + "\n" + message.encode('charmap', 'replace').decode('charmap')
+
+        log_file.write(complete_log)
 
 def create_playlist_folder(playlist_name: str, output_path: str) -> str:
     """Create a folder for the playlist with the current date and time in the output path."""

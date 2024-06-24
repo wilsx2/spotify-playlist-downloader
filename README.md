@@ -15,6 +15,7 @@ This project allows you to download songs from a Spotify playlist as audio files
 - pip (Python package installer)
 
 ## Setup
+These instructions assume you are using Git Bash for Windows.
 
 1. **Clone the repository:**
 
@@ -27,7 +28,7 @@ This project allows you to download songs from a Spotify playlist as audio files
 
     ```sh
     python -m venv env
-    source env/bin/activate  # On Windows use `env/Scripts/activate`
+    source env/Scripts/activate  # On Linux use source env/bin/activate``
     ```
 
 3. **Install dependencies:**
@@ -51,19 +52,25 @@ This project allows you to download songs from a Spotify playlist as audio files
 
 ## How to Run
 
-1. **Run the main script:**
+1. **Switch to command prompt:**
+
+    ```sh
+    cmd
+    ```
+
+2. **Run the main script:**
 
     ```sh
     python main.py
     ```
 
-2. **Follow the prompts:**
+3. **Follow the prompts:**
 
     - Provide the Spotify playlist URL when prompted.
-    - Sign into your Spotify account so you can access your playlists
+    - If prompted, sign into your Spotify account so you can access your playlists
     - Choose the download destination (default is the Music folder).
 
-3. **Wait for the download to complete:**
+4. **Wait for the download to complete:**
 
     - The program will download the songs using multiprocessing to speed up the process.
     - A log file will be saved in the download folder with the results of each download.
